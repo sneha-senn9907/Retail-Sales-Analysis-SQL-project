@@ -12,10 +12,12 @@ This project aimed to analyze retail sales data to understand customer behavior,
 # SQL Queries performed:
 
 # Data imported
+ 
   select * from Retail_sales 
 
 # Data cleaning and exploration 
 # Check for any null values in the dataset 
+  
   select * from Retail_sales 
   where
   	sale_date is null  or sale_time is null or 
@@ -25,6 +27,7 @@ This project aimed to analyze retail sales data to understand customer behavior,
   	or cogs is null
 
 # Delete records with missing data or null value.
+ 
   delete from Retail_sales
   where
       sale_date is null  or sale_time is null or 
