@@ -55,12 +55,12 @@ Check for any null values in the dataset
        select * from Retail_sales
        	where sale_date='2022-11-05'
 
-2. Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than equal to 4 in the month of Nov-2022
+# 2. Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than equal to 4 in the month of Nov-2022
   
     select * from Retail_sales
     	where category='Clothing' and quantity>=4 and datename(YYYY,sale_date)='2022' and DATENAME(MM,sale_date)='November'
 
-3. Write a SQL query to calculate the total sales (total_sale) for each category.
+# 3. Write a SQL query to calculate the total sales (total_sale) for each category.
   
      select category,sum(total_sale) as Total_Sale from retail_sales 
      	group by category
